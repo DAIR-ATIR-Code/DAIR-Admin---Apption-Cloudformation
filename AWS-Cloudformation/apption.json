@@ -96,7 +96,7 @@
                 "echo \"Creating directory and file for Apption Boosterpack deployment\"",
                 "mkdir /home/$(ls /home/* -d | head -n 1 | cut -d/ -f3)/ApptionBP",
                 "cd /home/$(ls /home/* -d | head -n 1 | cut -d/ -f3)/ApptionBP",
-                "wget --no-check-certificate \"https://code.cloud.canarie.ca:3000/Apption/cloud-data-tools/raw/$RELEASENAME/AWS-Cloudformation/docker-compose.yml\"",
+                "wget --no-check-certificate \"https://github.com/DAIR-ATIR-Code/DAIR-Admin---Apption-Cloudformation/blob/783e0eb7084d058449c8c11801d6f943a35bf07c/AWS-Cloudformation/docker-compose.yml\"",
 
                 "echo \"Starting Up Application\"",
                 "docker-compose up -d",
