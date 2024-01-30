@@ -13,8 +13,8 @@ services:
       - SA_PASSWORD=Welcome2Adat!
 
   adat_tool:
-    image: apption/adat-os-linux2.0
+    image: apption/adat-os:latest
     container_name: adat
     restart: always
     ports:
-      - "8000:80"
+      - "8000:8000"
